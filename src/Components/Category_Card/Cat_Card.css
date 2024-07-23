@@ -1,0 +1,21 @@
+.cat-card
+{
+    background-color: #c7efe8;
+    display: flex;
+    height: 7rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 20px;
+    border-radius: 15px;
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+.cat-card img
+{
+    width: 3rem;
+}
+.cat-card a
+{
+    text-decoration: none;
+}

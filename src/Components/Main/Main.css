@@ -1,0 +1,196 @@
+.main
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main .main-top
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d5ecff;
+    align-items: center;
+    padding: 20px;
+    max-width: 100vw;
+    
+}
+
+.main .site-title
+{
+    display: flex;
+}
+
+.main .site-links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.site-links img
+{
+    width: 30px;
+}
+.site-links a
+{
+    text-decoration: none;
+    color: #484848;
+
+}
+.site-links a:hover
+{
+    background-color: #f0f4f9;
+}
+
+.main .mid-head
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 10vw;
+    margin-top: 2vh;
+}
+
+.main .tag-line
+{
+    font-size: clamp(20px, 4vw, 40px)
+}
+.main .tag-line p
+{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-top: 8px;
+}
+
+.main .pros
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+.main .pros img
+{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.main .pros .pro p
+{
+    font-size: clamp(0.6rem, 1.5vw, 1rem );
+}
+.main .pros .pro
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.main .head-illust
+{
+    display: flex;
+    flex-grow: 1;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main .head-illust img
+{
+    width: 20vw;
+    border-radius: 50%;
+}
+
+.main .search-bar
+{
+    display: flex;
+    background-color: #d5ecff;
+    width: 70vw;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-top: 20px;
+}
+.main .search-bar img
+{
+    min-width: 0.5rem;
+    max-width: 2rem;
+}
+
+.main .search-bar input
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: clamp(0.8rem, 1.2vw, 3rem);
+    flex-grow: 1;
+}
+.main .search-bar button
+{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.main .brand-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    place-items: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.available-phones
+{
+    padding-top: 30px;
+}
+.available-phones h2
+{
+    font-size: clamp(25px, 4vw, 35px);
+    background-color: #d5ecff;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.main .category
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: #f0f5f9;
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    
+.main .site-links a{
+    display: none;
+}
+
+.main .search-bar {
+    width: 90vw;
+    margin-left: 5vw;
+}
+.main .head-illust img {
+    display: none;
+}
+.main .mid-head{
+    background-image: url('/src/assets/head_ilust_blur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+}
